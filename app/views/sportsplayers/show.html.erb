@@ -1,0 +1,16 @@
+<h1> <%= @sportsplayer.name %> </h1>
+
+<p> Number: <%= @sportsplayer.number %></p>
+<p> Position: <%= @sportsplayer.position %></p>
+<p> String: <%= @sportsplayer.string %></p>
+<p> Sport: <%= @sportsplayer.sport %></p>
+<br>
+<p><%= link_to "Back to all players", sportsplayers_path %></p>
+<br>
+<p><%= link_to "Edit this player", edit_sportsplayer_path(@sportsplayer) %></p>
+
+<br>
+<p><%= link_to "Delete this player", destroy_path, data: {confirm: "Are you sure you want to delete #{@sportsplayer.name}?!"} %></p>
+
+
+

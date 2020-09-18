@@ -1,0 +1,23 @@
+<h1> Edit </h1>
+
+<%= form_for(@sportsplayer) do |f| %>
+ 
+    <%= f.label "Number:" %>
+    <%= f.number_field :number%>
+    <br>
+    <br>
+    <%= f.label "Position:" %>
+    <%= f.text_field :position %>
+    <br>
+    <br>
+    <%= f.label "String:" %>
+    <%= f.text_field :string%>
+    <br>
+    <br>
+    <%= f.label "Sport:" %>
+    <!--<%= f.text_field :sport%>-->
+    <%= f.select :sport, ["Football", "Baseball", "Basketball", "Hockey", "Golf", "Soccer", "Lacrose", "Swimmming", "Running", "Dodge Ball"] %>
+    <br>
+    <br>
+    <%= f.submit "Edit #{@sportsplayer.name}" %>
+    <% end %>

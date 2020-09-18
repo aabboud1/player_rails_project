@@ -1,0 +1,26 @@
+<h1> New Player </h1>
+
+<%= form_for(@sportsplayer) do |f| %>
+<%= f.label "Name:" %>
+<%= f.text_field :name %>
+<br>
+<br>
+<%= f.label "Number:" %>
+<%= f.number_field :number%>
+<br>
+<br>
+<%= f.label "Position:" %>
+<%= f.text_field :position %>
+<br>
+<br>
+<%= f.label "String:" %>
+<%= f.text_field :string%>
+<br>
+<br>
+<%= f.label "Sport:" %>
+<%= f.text_field :sport %>
+<br>
+<br>
+<%= f.submit "Create new player" %>
+<% end %>
+
